@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(167, 157, 157);
+    
+}
+.ox_main{
+    /* border:2px double blue; */
+    background: #fff;
+    min-width: 260px;
+    min-height:450px ;
+    margin: 5px;
+}
+.ox_phone{
+    min-width: 280px;
+    min-height: 580px;
+    background: rgb(14, 12, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -1px -29px 6px 4px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -1px -29px 6px 4px rgba(0,0,0,0);
+}
+
+
+.calculator{
+    position: relative;
+    display: grid;
+    top: 35px;
+}
+.calculator .valued{
+    grid-column: span 4;
+    min-height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid;
+}
+.calculator span{
+    display: grid;
+    width: 55px;
+    height:55px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background: #959a9c;
+    place-items: center;
+    border: 1px solid rbga(0,0,0,0.1);
+    cursor: pointer;
+    margin: 2px;
+    -webkit-box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.79); 
+    box-shadow: 2px 3px 5px -1px rgba(0,0,0,0.79);
+    
+}
+.calculator span{
+    border-radius: 50%;
+}
+.calculator span:active{
+    background: #a9aca7;
+    color: #111;
+}
+.calculator span.clear{
+    grid-row: span 2;
+    height: 120px;
+    background: rgb(117, 182, 219);
+    border-radius: 10px;
+    font-size: 22px;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 120px;
+    border-radius: 10px;
+}
+.calculator span.equal{
+    background: rgb(224, 177, 47);
+}
+.ox_img{
+    width: 100%;
+    min-height: 20px;
+    position:absolute;
+    top: -37px;
+}
